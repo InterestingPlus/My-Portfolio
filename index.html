@@ -1583,6 +1583,13 @@
           });
         });
       });
+
+      const copyLi = document.querySelectorAll("ol li");
+      copyLi.forEach((li) => {
+        li.addEventListener("click", () => {
+          navigator.clipboard.writeText(li.textContent);
+        });
+      });
     </script>
   </body>
 </html>
