@@ -1,5 +1,895 @@
-<h1>JAtin Poriya</h1>
-<h3>Portfolio</h3>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Project List by Category</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
 
-<br><br>
-<p>This Site is Under Contruction...</p>
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #2c3e50;
+      }
+
+      h1 {
+        border-bottom: 2px solid #2c3e50;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        border-bottom: 1px solid #2c3e50;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        margin-top: 30px;
+      }
+
+      ol {
+        list-style: none; /* Remove default list styling */
+        margin-left: 20px;
+        padding-left: 0;
+      }
+
+      ol > li {
+        counter-increment: list-counter; /* Increment custom counter */
+        position: relative;
+        padding-left: 40px !important;
+      }
+
+      ol > li::before {
+        content: counter(list-counter) "."; /* Display custom counter */
+        position: absolute;
+        left: 15px;
+        color: red;
+      }
+
+      ul {
+        list-style-type: disc; /* Ensure bullets are shown */
+        margin-left: 20px;
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 15px;
+      }
+
+      .section-description {
+        background: #ecf0f1;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+
+      .project-list li {
+        background: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .project-list li:hover {
+        transform: scale(1.02);
+      }
+
+      .project-overview ul {
+        list-style-type: square;
+      }
+
+      .project-overview ul li {
+        background: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .checkbox {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Portfolio Project List by Category</h1>
+      <p class="section-description">
+        A comprehensive list of project ideas for each category, ensuring a wide
+        variety of examples. This helps to build a strong, diverse portfolio.
+        Here we go:
+      </p>
+
+      <!-- ========================= 01. Basic ========================= -->
+
+      <h2>1. Basic Frontend Projects (HTML, CSS, JavaScript)</h2>
+
+      <!-- ========================= 01.1 Games -->
+
+      <h3>Games:</h3>
+
+      <ol class="project-list">
+        <li>Tic-Tac-Toe <input type="checkbox" class="checkbox" /></li>
+        <li>Memory Game <input type="checkbox" class="checkbox" /></li>
+        <li>Snake Game <input type="checkbox" class="checkbox" /></li>
+        <li>Whack-a-Mole <input type="checkbox" class="checkbox" /></li>
+        <li>Rock-Paper-Scissors <input type="checkbox" class="checkbox" /></li>
+        <li>Simon Game <input type="checkbox" class="checkbox" /></li>
+        <li>2048 Game <input type="checkbox" class="checkbox" /></li>
+        <li>Flappy Bird Clone <input type="checkbox" class="checkbox" /></li>
+        <li>Hangman <input type="checkbox" class="checkbox" /></li>
+
+        <br />
+
+        <li>Minesweeper <input type="checkbox" class="checkbox" /></li>
+        <li>Sudoku Solver <input type="checkbox" class="checkbox" /></li>
+        <li>Pong Game <input type="checkbox" class="checkbox" /></li>
+        <li>Breakout Game <input type="checkbox" class="checkbox" /></li>
+        <li>Typing Speed Test <input type="checkbox" class="checkbox" /></li>
+        <li>Chess <input type="checkbox" class="checkbox" /></li>
+        <li>Checkers <input type="checkbox" class="checkbox" /></li>
+        <li>Battleship <input type="checkbox" class="checkbox" /></li>
+        <li>Tetris <input type="checkbox" class="checkbox" /></li>
+        <li>Connect Four <input type="checkbox" class="checkbox" /></li>
+
+        <br />
+
+        <li>Word Search Puzzle <input type="checkbox" class="checkbox" /></li>
+        <li>Boggle <input type="checkbox" class="checkbox" /></li>
+        <li>Card Matching Game <input type="checkbox" class="checkbox" /></li>
+        <li>Escape the Maze <input type="checkbox" class="checkbox" /></li>
+        <li>Paper Toss Game <input type="checkbox" class="checkbox" /></li>
+        <li>Pinball Game <input type="checkbox" class="checkbox" /></li>
+        <li>Jigsaw Puzzle <input type="checkbox" class="checkbox" /></li>
+        <li>Space Invaders <input type="checkbox" class="checkbox" /></li>
+        <li>Platformer Game <input type="checkbox" class="checkbox" /></li>
+        <li>Text Adventure Game <input type="checkbox" class="checkbox" /></li>
+      </ol>
+
+      <!-- ========================= 01.2 Tools -->
+      <h3>Tools:</h3>
+
+      <ol class="project-list">
+        <li>To-Do List <input type="checkbox" class="checkbox" /></li>
+        <li>Calculator <input type="checkbox" class="checkbox" /></li>
+        <li>Stopwatch/Timer <input type="checkbox" class="checkbox" /></li>
+        <li>Unit Converter <input type="checkbox" class="checkbox" /></li>
+        <li>
+          Weather App (Using OpenWeatherMap API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>Currency Converter <input type="checkbox" class="checkbox" /></li>
+        <li>Markdown Previewer <input type="checkbox" class="checkbox" /></li>
+        <li>Pomodoro Timer <input type="checkbox" class="checkbox" /></li>
+        <li>Recipe Finder <input type="checkbox" class="checkbox" /></li>
+
+        <br />
+
+        <li>Expense Tracker <input type="checkbox" class="checkbox" /></li>
+        <li>BMI Calculator <input type="checkbox" class="checkbox" /></li>
+        <li>Weather Dashboard <input type="checkbox" class="checkbox" /></li>
+        <li>
+          Random Quote Generator <input type="checkbox" class="checkbox" />
+        </li>
+        <li>Password Generator <input type="checkbox" class="checkbox" /></li>
+        <li>Color Picker <input type="checkbox" class="checkbox" /></li>
+        <li>Tip Calculator <input type="checkbox" class="checkbox" /></li>
+        <li>
+          Interactive Resume Builder <input type="checkbox" class="checkbox" />
+        </li>
+        <li>Flashcard App <input type="checkbox" class="checkbox" /></li>
+        <li>
+          Event Countdown Timer <input type="checkbox" class="checkbox" />
+        </li>
+
+        <br />
+
+        <li>
+          Markdown to HTML Converter <input type="checkbox" class="checkbox" />
+        </li>
+        <li>QR Code Generator <input type="checkbox" class="checkbox" /></li>
+        <li>Expense Splitter <input type="checkbox" class="checkbox" /></li>
+        <li>
+          Weather Dashboard with Map Integration
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Periodic Table Explorer <input type="checkbox" class="checkbox" />
+        </li>
+        <li>Name Generator <input type="checkbox" class="checkbox" /></li>
+        <li>Real-time Clock <input type="checkbox" class="checkbox" /></li>
+        <li>RGB to Hex Converter <input type="checkbox" class="checkbox" /></li>
+        <li>Daily Planner <input type="checkbox" class="checkbox" /></li>
+        <li>
+          Interactive Kanban Board <input type="checkbox" class="checkbox" />
+        </li>
+      </ol>
+
+      <!-- ========================= 01.3 UI -->
+      <h3>Unique Interactive Models:</h3>
+
+      <ol class="project-list">
+        <li>
+          Interactive Storybook <input type="checkbox" class="checkbox" />
+        </li>
+        <li>Drawing App <input type="checkbox" class="checkbox" /></li>
+        <li>Music Player <input type="checkbox" class="checkbox" /></li>
+        <li>Quiz App <input type="checkbox" class="checkbox" /></li>
+        <li>
+          Light/Dark Mode Toggle <input type="checkbox" class="checkbox" />
+        </li>
+        <li>CSS Art Gallery <input type="checkbox" class="checkbox" /></li>
+        <li>
+          Image Slider/Carousel <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Real-time Chat App (Frontend Only)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>Virtual Keyboard <input type="checkbox" class="checkbox" /></li>
+
+        <br />
+
+        <li>Interactive Map <input type="checkbox" class="checkbox" /></li>
+        <li>Virtual Pet <input type="checkbox" class="checkbox" /></li>
+        <li>
+          Customizable Meme Generator <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Interactive Periodic Table <input type="checkbox" class="checkbox" />
+        </li>
+        <li>Recipe Book <input type="checkbox" class="checkbox" /></li>
+        <li>Dynamic Resume <input type="checkbox" class="checkbox" /></li>
+        <li>Virtual Drum Kit <input type="checkbox" class="checkbox" /></li>
+        <li>
+          Interactive Infographic <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Personalized Greeting Card <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Astrological Compatibility Checker
+          <input type="checkbox" class="checkbox" />
+        </li>
+
+        <br />
+
+        <li>Interactive Globe <input type="checkbox" class="checkbox" /></li>
+        <li>Virtual Piano <input type="checkbox" class="checkbox" /></li>
+        <li>
+          Interactive Story Timeline <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Animated Weather Dashboard <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Interactive CV/Resume <input type="checkbox" class="checkbox" />
+        </li>
+        <li>Journey Map <input type="checkbox" class="checkbox" /></li>
+        <li>
+          Interactive Plant Care Guide
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>Daily Quote App <input type="checkbox" class="checkbox" /></li>
+        <li>
+          Interactive Math Tutor <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Voice-controlled Web App <input type="checkbox" class="checkbox" />
+        </li>
+      </ol>
+
+      <!-- ========================= 02. UI Designs ========================= -->
+
+      <h2>2. Advanced UI Designs</h2>
+      <p class="section-description">
+        Technologies: Gsap, Three.js, React.js, React Three Fiber, ScrollTrigger
+      </p>
+      <ol class="project-list">
+        <li>
+          Interactive Portfolio <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Landing Page with Scroll Animations
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>3D Product Showcase <input type="checkbox" class="checkbox" /></li>
+        <li>
+          Parallax Scrolling Website <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Animated SVG Illustrations <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Interactive Data Visualizations
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Dynamic Photo Gallery <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Animated Login/Signup Form <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Portfolio with 3D Elements <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Scrolling Story with Animations
+          <input type="checkbox" class="checkbox" />
+        </li>
+
+        <br />
+
+        <li>
+          3D Model Viewer
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Interactive Data Dashboard
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Augmented Reality Experience
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Virtual Tour
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Custom Video Player
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Dynamic Form with Validation
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Weather Visualization
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          E-Commerce Product Configurator
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Portfolio with Motion Graphics
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Timeline of Historical Events
+          <input type="checkbox" class="checkbox" />
+        </li>
+
+        <br />
+
+        <li>
+          Virtual Reality Experience
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          3D Interactive Museum Tour
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Interactive Music Visualizer
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Dynamic Portfolio Grid
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          3D Interactive Product Catalog
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Interactive Comic Book
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Animation-Driven User Guides
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Advanced Dashboard with Realtime Data
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Customizable Theme Editor
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Interactive Brand Storytelling
+          <input type="checkbox" class="checkbox" />
+        </li>
+      </ol>
+
+      <!-- ========================= 03. API ========================= -->
+
+      <h2>3. Backend Projects Using Free APIs (React)</h2>
+      <ol class="project-list">
+        <li>
+          Weather App (OpenWeatherMap API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          YouTube Video Search App (YouTube API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Book Finder (Google Books API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Movie Info App (OMDb API) <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Recipe Finder (Spoonacular API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          News Aggregator (NewsAPI) <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Crypto Tracker (CoinGecko API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          GIF Search Engine (Giphy API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          City Events Finder (Eventbrite API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Music Search App (Spotify API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+
+        <br />
+
+        <li>
+          Lyrics Finder (Genius API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Food Delivery App (Zomato API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Travel Planner (TripAdvisor API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Language Translator (Google Translate API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Stock Market Tracker (Alpha Vantage API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Fitness Tracker (Nutritionix API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Art Gallery (Harvard Art Museums API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Podcast Player (iTunes API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Currency Exchange App (ExchangeRate-API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Flight Search Engine (Skyscanner API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+
+        <br />
+
+        <li>
+          Pet Adoption Finder (Petfinder API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Space News (NASA API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Air Quality Monitor (Breezometer API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Recipe Ingredient Substitution (Edamam API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Stock Portfolio Tracker (IEX Cloud API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Movie Showtimes and Ticket Booking (MovieGlu API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Book Club (Goodreads API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Travel Itinerary Planner (Rome2Rio API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Fitness Class Finder (ClassPass API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Virtual Library (OpenLibrary API)
+          <input type="checkbox" class="checkbox" />
+        </li>
+      </ol>
+
+      <!-- ========================= 04. Full Stack ========================= -->
+
+      <h2>4. Complete Full Stack Projects</h2>
+      <p class="section-description">
+        Frontend: React.js, Backend: Node.js/Express, Database:
+        MongoDB/MySQL/PostgreSQL, Deployment: Docker, AWS, Heroku
+      </p>
+      <ol class="project-list">
+        <li>
+          E-Commerce Platform: User authentication, product listings, cart,
+          payment integration. <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Social Media App: Profiles, posts, comments, likes, real-time chat.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Project Management Tool: Task management, team collaboration, project
+          timelines. <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Blog Platform: User accounts, posts, comments, categories.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Job Board: Job listings, applications, company profiles.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Online Learning Platform: Courses, quizzes, progress tracking.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Event Management System: Event creation, RSVPs, notifications.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Fitness Tracker: Workout logging, progress tracking, goal setting.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Expense Tracker: Income/expense logging, reports, budget planning.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Travel Booking App: Search flights/hotels, bookings, user reviews.
+          <input type="checkbox" class="checkbox" />
+        </li>
+
+        <br />
+
+        <li>
+          Online Auction Platform: Bid on items, track auctions, user
+          authentication.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Crowdfunding Platform: Create and support projects, payment
+          integration.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Video Streaming Service: User accounts, video uploads, streaming.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Personal Finance Manager: Budgeting, expense tracking, financial
+          reports.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Real Estate Listings: Property search, user profiles, saved searches.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Online Marketplace: Buy and sell items, user reviews, secure
+          transactions.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Health Tracker: Log health metrics, track progress, set goals.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Virtual Event Platform: Host and attend virtual events, live
+          streaming.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Digital Library: E-book management, reading progress, user notes.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Freelance Platform: Job postings, applications, messaging.
+          <input type="checkbox" class="checkbox" />
+        </li>
+
+        <br />
+
+        <li>
+          Online Forum: User accounts, post creation, comments, moderation
+          tools.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Remote Learning Platform: Video lectures, assignments, student-teacher
+          interaction.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Customer Relationship Management (CRM): Manage customer data,
+          interactions, sales.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Human Resources Management System: Employee records, payroll,
+          performance reviews.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Task Automation Tool: Create and manage automated workflows.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Booking System: Reservations for hotels, restaurants, services.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Healthcare Management System: Patient records, appointment scheduling,
+          billing.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Real-Time Collaboration Tool: Shared documents, chat, video
+          conferencing.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Warehouse Management System: Inventory tracking, order management,
+          reporting.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Content Management System (CMS): Create, edit, manage website content.
+          <input type="checkbox" class="checkbox" />
+        </li>
+      </ol>
+
+      <!-- ========================= 05. AI ML ========================= -->
+
+      <h2>5. Projects with Integrated AI and Machine Learning</h2>
+      <p class="section-description">
+        Using: TensorFlow, PyTorch, scikit-learn, OpenAI, Google Cloud AI,
+        Amazon AI
+      </p>
+      <ol class="project-list">
+        <li>
+          Recommendation System: Suggest products, movies, content based on user
+          preferences. <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Chatbot: Customer service bot using NLP.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Sentiment Analysis Tool: Analyze text data for sentiment.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Image Classification: Recognize and classify images.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Spam Detection: Identify and filter spam emails/messages.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Predictive Analytics: Predict trends or outcomes based on historical
+          data. <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Handwriting Recognition: Recognize handwritten text from images.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Voice Assistant: Voice commands and responses.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Personalized News Feed: Curate news articles based on user interests.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Fraud Detection System: Detect fraudulent transactions or activities.
+          <input type="checkbox" class="checkbox" />
+        </li>
+
+        <br />
+
+        <li>
+          Face Recognition System: Identify faces in images or videos.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          AI-Powered Personal Assistant: Task automation, reminders, information
+          retrieval.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Autonomous Navigation System: Pathfinding for robots or drones.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Emotion Detection: Analyze facial expressions to determine emotions.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Text Summarization: Automatically summarize long texts.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          AI Art Generator: Create artwork using neural networks.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Speech Recognition: Convert spoken words to text.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Real-time Language Translation: Translate conversations in real-time.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Optical Character Recognition (OCR): Extract text from images.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          AI-Based Tutoring System: Personalized learning plans, feedback,
+          assessments.
+          <input type="checkbox" class="checkbox" />
+        </li>
+
+        <br />
+
+        <li>
+          Pose Estimation: Detect and analyze human poses from images or videos.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Voice Cloning: Clone a voice from audio samples.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          AI-driven Stock Market Predictor: Predict stock prices using
+          historical data.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Advanced Image Editing Tools: Enhance images with AI.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          AI Writing Assistant: Provide suggestions and corrections for writing.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          AI-based Health Diagnostics: Analyze symptoms and provide health
+          advice.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          AI-Powered Language Learning Tool: Personalized learning plans,
+          pronunciation feedback.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          AI-Enhanced Virtual Shopping Assistant: Recommend products based on
+          user preferences.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          Real-Time Sports Analytics: Analyze and provide insights during live
+          sports events.
+          <input type="checkbox" class="checkbox" />
+        </li>
+        <li>
+          AI-Driven Music Composition: Generate music tracks based on user
+          preferences.
+          <input type="checkbox" class="checkbox" />
+        </li>
+      </ol>
+
+      <h2>Project Ideas Overview:</h2>
+      <ul class="project-overview">
+        <li>
+          Basic Frontend: Focus on essential web development skills and simple,
+          interactive projects.
+        </li>
+        <li>
+          Advanced UI Designs: Highlight your ability to create visually
+          appealing and dynamic interfaces.
+        </li>
+        <li>
+          Backend Projects: Demonstrate your proficiency in integrating
+          third-party APIs and managing data.
+        </li>
+        <li>
+          Full Stack Projects: Showcase your complete development workflow from
+          frontend to backend, including deployment.
+        </li>
+        <li>
+          AI and ML Projects: Illustrate your capability to implement AI/ML
+          models and integrate them into practical applications.
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const checkboxes = document.querySelectorAll(".checkbox");
+
+        checkboxes.forEach((checkbox) => {
+          const listItem = checkbox.parentElement.textContent.trim();
+          if (localStorage.getItem(listItem) === "checked") {
+            checkbox.checked = true;
+          }
+
+          checkbox.addEventListener("change", function () {
+            if (checkbox.checked) {
+              localStorage.setItem(listItem, "checked");
+            } else {
+              localStorage.removeItem(listItem);
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
