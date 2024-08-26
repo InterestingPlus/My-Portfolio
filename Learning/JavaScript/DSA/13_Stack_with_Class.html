@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stack with Class</title>
+  </head>
+  <body>
+    <h1>Stack with Class</h1>
+    <h2>[ <span></span> ]</h2>
+
+    <script>
+      class Stack {
+        items = [];
+        currentSize;
+        max;
+        print = document.querySelector("h2 span");
+
+        constructor(size) {
+          this.max = size;
+          this.currentSize = this.items.length;
+        }
+        push(newVal) {
+          if (this.currentSize >= this.max) {
+            alert("Stack is Full");
+          } else {
+            this.items[this.currentSize] = newVal;
+            this.currentSize++;
+          }
+          this.print.innerHTML = this.items;
+        }
+        pop() {
+          this.items.length--;
+          this.currentSize--;
+          this.print.innerHTML = this.items;
+        }
+      }
+
+      st1 = new Stack(5);
+    </script>
+  </body>
+</html>

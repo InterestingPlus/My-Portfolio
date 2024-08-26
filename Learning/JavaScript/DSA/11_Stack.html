@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stack Operation</title>
+
+    <style>
+      * {
+        transition: 0.2s all;
+      }
+      h2 {
+        color: rgb(255, 102, 0);
+      }
+      h2 span {
+        color: rgb(126, 5, 238);
+      }
+      button {
+        color: white;
+        background: red;
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+      button:hover {
+        background: rgb(169, 5, 46);
+      }
+      #pushBtn {
+        color: black;
+        background: rgb(67, 255, 67);
+        border-radius: 5px;
+        transition: 0.2s all;
+      }
+      #pushBtn:hover {
+        color: #fff;
+        background: green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Stack : [ <span></span> ]</h2>
+    <hr />
+
+    <label for="max">Max Length :</label>
+    <input
+      type="number"
+      id="max"
+      value="5"
+      placeholder="Max Value"
+      onkeyup="maxVal()"
+      onchange="maxVal()"
+    />
+
+    <br />
+    <br />
+
+    <form>
+      <input type="number" placeholder="New Value" name="newVal" id="push" />
+      <button id="pushBtn" type="submit">Push</button>
+    </form>
+
+    <br /><br />
+    <button onclick="pop()">Remove</button>
+
+    <script>
+      let stack = [23, 51, 64];
+      let pushBtn = document.getElementById("pushBtn");
+
+      let local = localStorage.getItem("stack");
+      let localMax = Number(localStorage.getItem("max"));
+
+      max = Number(document.querySelector("#max").value);
+
+      if (local != undefined) {
+        local = local.split(",");
+        stack = local;
+        max = localMax;
+        document.querySelector("#max").value = max;
+      } else {
+        localStorage.setItem("stack", [stack]);
+        localStorage.setItem("max", 5);
+      }
+
+      let currentSize = stack.length;
+
+      function print() {
+        localStorage.setItem("stack", [stack]);
+        document.querySelector("h2 span").innerHTML = stack;
+      }
+      print();
+
+      function maxVal() {
+        max = Number(document.querySelector("#max").value);
+        localStorage.setItem("max", max);
+        currentSize = stack.length;
+        console.log(currentSize, max);
+        if (currentSize > max) {
+          stack.length = max;
+          currentSize = stack.length;
+        }
+        print();
+      }
+      document.querySelector("form").addEventListener("submit", function(e) {
+        e.preventDefault();
+        let newVal = document.querySelector("#push").value;
+
+        if (currentSize < max) {
+          if (newVal.length == 0) {
+            alert("You cannot Add Null value to the Stack");
+            return;
+          }
+          stack[currentSize] = Number(newVal);
+          currentSize++;
+          alert(newVal + " Added to Stack");
+          document.querySelector("#push").value = "";
+          newVal = null;
+        } else {
+          alert(
+            "Stack is Full, you cannot Add " +
+              newVal +
+              ". Please Extend the Max Value = " +
+              max
+          );
+        }
+
+        print();
+      });
+      function pop() {
+        if (currentSize > 0) {
+          let temp = stack[currentSize - 1];
+          stack.length--;
+          currentSize--;
+          alert(temp + " Removed from Stack");
+        } else {
+          alert("Stack is Empty");
+        }
+        print();
+      }
+    </script>
+  </body>
+</html>
